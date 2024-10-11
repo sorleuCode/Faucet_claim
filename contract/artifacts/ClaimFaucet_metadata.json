@@ -299,11 +299,11 @@
 	},
 	"sources": {
 		"contract/ClaimFaucet.sol": {
-			"keccak256": "0x642e8fa86edc667bfc58388f1b81615f8a53d58a52824a32534f86ba4c4ba031",
+			"keccak256": "0x637390623e011186d1c5c3c6063da1f90091866c030c89d7c34367598285d329",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://02d9a52c135a1e84faaac27cbf4fe359c80166c73b0e26e9c5d7280f4579fb42",
-				"dweb:/ipfs/QmNk1EYkGN6XH9qzLCLQwP8nKnTJeeJM7ipJY3VKj3tsRG"
+				"bzz-raw://7a4f024980da2afc31057449ccae2d5855f0b720caf11e058b948f2fa7c90824",
+				"dweb:/ipfs/QmVh4qiKVGqoBJeg6suUuVhkGzXwQCUPo2YCzW3ojAxhLh"
 			]
 		},
 		"contract/DltToken.sol": {

@@ -22,7 +22,7 @@ contract ClaimFaucet is DltToken {
         if(hasClaimedBefore[msg.sender]) {
 
             User storage currentUser = users[msg.sender];
-            require(currentUser.lastClaimTime + 1 days >= block.timestamp);
+            require(currentUser.lastClaimTime + 1 days <= block.timestamp, "You claim once after 24 hours");
             
             currentUser.lastClaimTime = block.timestamp;
             currentUser.totalClaimed  += CLAIMABLE_AMOUNT;

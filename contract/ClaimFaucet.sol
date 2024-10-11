@@ -15,15 +15,29 @@ contract ClaimFaucet is DltToken {
 
     mapping(address => bool) hasClaimedBefore;
 
+    event TokenClaimSuccessful (address indexed user, uint256 _amount, uint _time);
+
     function claimToken() public  {
         require(msg.sender != address(0), "Zero not allowed");
         if(hasClaimedBefore[msg.sender]) {
+
+            User storage currentUser = users[msg.sender];
+            require(currentUser.lastClaimTime + 1 days >= block.timestamp);
+            
+            currentUser.lastClaimTime = block.timestamp;
+            currentUser.totalClaimed  += CLAIMABLE_AMOUNT;
+
+            mint(CLAIMABLE_AMOUNT, msg.sender);
+
+            
+                emit TokenClaimSuccessful (msg.sender, CLAIMABLE_AMOUNT, block.timestamp);
+
 
 
         }else {
             hasClaimedBefore[msg.sender] = true;
             mint(CLAIMABLE_AMOUNT, msg.sender);
-            
+
             User memory currentUser;
             currentUser.lastClaimTime = block.timestamp;
             currentUser.totalClaimed = CLAIMABLE_AMOUNT;

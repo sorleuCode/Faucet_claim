@@ -52,6 +52,31 @@
 					{
 						"indexed": true,
 						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					}
+				],
+				"name": "TokenClaimSuccessful",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
 						"name": "sender",
 						"type": "address"
 					},
@@ -274,11 +299,11 @@
 	},
 	"sources": {
 		"contract/ClaimFaucet.sol": {
-			"keccak256": "0xbc87f6b3e50b554e77a7f4189a49bacc7bbd9ffd9752f86ce8551918e8902131",
+			"keccak256": "0x642e8fa86edc667bfc58388f1b81615f8a53d58a52824a32534f86ba4c4ba031",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5c0c20eee4eef509378a0595219413fecd3b93861e23c725f3930e158d59350e",
-				"dweb:/ipfs/QmQkS2Bwu6Ybdqqav1Pae2yzAnjr4KrabqBVFtzwPu6qVe"
+				"bzz-raw://02d9a52c135a1e84faaac27cbf4fe359c80166c73b0e26e9c5d7280f4579fb42",
+				"dweb:/ipfs/QmNk1EYkGN6XH9qzLCLQwP8nKnTJeeJM7ipJY3VKj3tsRG"
 			]
 		},
 		"contract/DltToken.sol": {

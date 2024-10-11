@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.27+commit.40a35a09"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract/ClaimFaucet.sol": "Claim"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract/ClaimFaucet.sol": {
+			"keccak256": "0xc18cc1c5aba2d41b26be375414a9e86e4c34c0b4079b10501d30642cb204e9ce",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c251ae4621919f544b7cf68236e76ce3514be2437241695686acb543d4a3ff32",
+				"dweb:/ipfs/QmVGLUoZ3BWagdno1Bq1oeYUeVTXuYsyiuRfeLVBcxpx6p"
+			]
+		}
+	},
+	"version": 1
+}
